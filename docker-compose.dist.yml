@@ -13,8 +13,8 @@ services:
             DOCUMENT_ROOT: /var/www/app/web
             INDEX_FILE: index.php
             PHP_FPM_SOCKET: php:9000
-            VIRTUAL_HOST: api.sourcebox.be
-            LETSENCRYPT_HOST: api.sourcebox.be
+            VIRTUAL_HOST: cryptonaut.services.sourcebox.be
+            LETSENCRYPT_HOST: cryptonaut.services.sourcebox.be
             LETSENCRYPT_EMAIL: admin@sourcebox.be
 
     php:
@@ -35,5 +35,5 @@ services:
 
 networks:
     default:
-       external:
-         name: webproxy
+        external:
+            name: webproxy
